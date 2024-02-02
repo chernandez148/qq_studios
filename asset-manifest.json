@@ -1,11 +1,14 @@
 {
-  "main.css": "static/css/main.6bf0880d.css",
-  "main.css.map": "static/css/main.6bf0880d.css.map",
-  "main.js": "static/js/main.c745292f.js",
-  "main.js.map": "static/js/main.c745292f.js.map",
+  "main.css": "static/css/main.06fef0d8.css",
+  "main.css.map": "static/css/main.06fef0d8.css.map",
+  "main.js": "static/js/main.fd942b36.js",
+  "main.js.map": "static/js/main.fd942b36.js.map",
   "static/media/DigitalGlitch.ttf": "static/media/DigitalGlitch.f736672e.ttf",
   "static/media/GlitchInside.otf": "static/media/GlitchInside.0508b6f4.otf",
   "static/media/circut.png": "static/media/circut.5f48e2fd.png",
   "static/media/earth-alt.png": "static/media/earth-alt.75aec80f.png",
-  "static/media/earth-sphere.png": "static/media/earth-sphere.479d00aa.png"
+  "static/media/earth-sphere.png": "static/media/earth-sphere.479d00aa.png",
+  "static/media/glitch-image-1.png": "static/media/glitch-image-1.4e04e2ee.png",
+  "static/media/glitch-image-2.png": "static/media/glitch-image-2.e21a1979.png",
+  "static/media/glitch-image-3.png": "static/media/glitch-image-3.3ed1c948.png"
 }
