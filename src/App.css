@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'GlitchInside';
+    src: url('./fonts/GlitchInside.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'DigitalGlitch';
+    src: url('./fonts/DigitalGlitch.ttf') format('truetype');
+}
+
+
+.App {
+    background-color: #0F2934;
+}

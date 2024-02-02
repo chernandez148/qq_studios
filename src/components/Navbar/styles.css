@@ -1,0 +1,78 @@
+.Navbar {
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: 'Orbitron', sans-serif;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.Navbar .logo {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: black;
+    -webkit-clip-path: polygon(45% 100%, 50% 100%, 30% 0, 100% 0, 100% 100%, 0 100%, 0 0, 25% 0);
+    clip-path: polygon(30% 100%, 35% 100%, 30% 0, 100% 0, 100% 100%, 0 100%, 0 0, 25% 0);
+    display: flex;
+    flex: 0.2;
+    font-size: 8px;
+    justify-content: flex-end;
+    margin-right: 0.25rem;
+    padding: 0.5rem 1.5rem 1rem 1.5rem;
+    text-align: end;
+    text-decoration: none;
+}
+
+.Navbar ul {
+    display: flex;
+    flex: 0.7;
+    padding: 0;
+}
+
+.Navbar li {
+    background-color: white;
+    list-style-type: none;
+    margin: 0 0.25rem;
+    transition: flex 1s ease-in-out;
+}
+
+.Navbar .active {
+    background-color: #D78312;
+    color: white;
+    flex: 1;
+    transition: flex 1s ease-in-out;
+}
+
+.Navbar li,
+.Navbar button {
+    font-size: 10px;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+}
+
+.Navbar li:hover,
+.Navbar button:hover {
+    cursor: pointer;
+}
+
+.Navbar button {
+    background-color: #D78312;
+    border-width: 0 0 1px 0;
+    border-color: #D78312;
+    color: white;
+    flex: 0.1;
+    font-size: 10px;
+    padding: 0.75rem 1.5rem;
+    margin-left: .25rem;
+}
+
+@media screen and (min-width: 1880px) {
+    .Navbar .logo {
+        flex: 0.1;
+    }
+
+    .Navbar ul {
+        flex: .8;
+    }
+}

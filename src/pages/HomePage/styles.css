@@ -1,0 +1,174 @@
+.HomePage {
+    background-image: url(../../assets/circut.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Orbitron', sans-serif;
+    padding: 3rem 0;
+}
+
+.logo-text {
+    position: absolute;
+    padding: 1rem;
+    border-bottom: 4px solid white;
+}
+
+.logo-text h1 {
+    color: white;
+    font-size: 100px;
+    font-weight: 100;
+}
+
+.location {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.location-name {
+    position: absolute;
+    top: 40%;
+    z-index: 3;
+}
+
+.right {
+    text-align: right;
+    width: 100%;
+}
+
+.stack {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    z-index: 2;
+}
+
+.stack span {
+    font-weight: bold;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    font-size: 4rem;
+    --stack-height: calc(100% / var(--stacks) - 1px);
+    --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
+    --clip-top: calc(var(--stack-height) * var(--index));
+    --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
+    clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
+    animation: stack 340ms cubic-bezier(.46, .29, 0, 1.24) 1 backwards calc(var(--index) * 120ms), glitch 1s ease infinite 3s alternate-reverse;
+}
+
+.stack span:nth-child(odd) {
+    --glitch-translate: 8px;
+}
+
+.stack span:nth-child(even) {
+    --glitch-translate: -8px;
+}
+
+.offset-glitch {
+    filter: hue-rotate(201deg);
+}
+
+.learn-more {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.learn-more p {
+    color: white;
+    font-size: 12px;
+    width: 300px;
+    line-height: 20px;
+    padding: 0 1rem;
+}
+
+.learn-more button {
+    font-family: 'Orbitron', sans-serif !important;
+    padding: .5rem 1rem;
+    border: 0;
+    background-color: #D78312;
+    color: white;
+}
+
+@keyframes stack {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+
+    60% {
+        opacity: 0.5;
+        transform: translateX(50%);
+    }
+
+    80% {
+        transform: none;
+        opacity: 1;
+    }
+
+    100% {
+        box-shadow: none;
+    }
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate(var(--glitch-translate));
+        opacity: 1;
+    }
+
+    10% {
+        transform: translate(var(--glitch-translate));
+        opacity: .8;
+    }
+
+    20% {
+        transform: translate(var(--glitch-translate));
+        opacity: 1;
+    }
+
+    30% {
+        transform: translate(var(--glitch-translate));
+        opacity: .8;
+    }
+
+    40% {
+        transform: translate(var(--glitch-translate));
+        opacity: 1;
+    }
+
+    50% {
+        transform: translate(var(--glitch-translate));
+        opacity: .8;
+    }
+
+    60% {
+        transform: translate(var(--glitch-translate));
+        opacity: 1;
+    }
+
+    70% {
+        transform: translate(var(--glitch-translate));
+        opacity: .8;
+    }
+
+    80% {
+        transform: translate(var(--glitch-translate));
+        opacity: 1;
+    }
+
+    90% {
+        transform: translate(var(--glitch-translate));
+        opacity: .8;
+    }
+
+    100% {
+        box-shadow: none;
+        transform: none;
+        opacity: 1;
+    }
+}
